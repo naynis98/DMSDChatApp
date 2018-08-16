@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String name = etName.getText().toString();
-                ClipData.Item item = new ClipData.Item(name);
+//                ClipData.Item item = new ClipData.Item(name);
 
-                itemListRef.setValue(item);
+                itemListRef.setValue(name);
 
                 Intent intent = new Intent(getBaseContext(), MainActivity.class);
                 startActivity(intent);
